@@ -1,0 +1,20 @@
+name: release-CICD
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 6 sec
+        run: sleep 6s
+      - name: Breaks/Throws Error
+        run: abcdefg g
+      - name: Log ENV
+        run: |
+          echo "ENV_1: ${ENV_1}"
+          echo "ENV_2: ${ENV_2}"
+      - name: Echo a String
+        run: echo "Released a new version (Tag)"
