@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Sleep for 6 sec
         run: sleep 6s
-      - name: Breaks/Throws Error
-        run: abcdefg g
+#       - name: Breaks/Throws Error
+#         run: abcdefg g
       - name: Log ENV
         run: |
           echo "ENV_1: ${ENV_1}"
